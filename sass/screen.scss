@@ -98,6 +98,16 @@ a {
             margin-top: 0em;
         }
     }
+    #links {
+        .current {
+            color: white;
+            background: $red;
+            text-decoration: none;
+            padding: 0px 10px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+        }
+    }
 }
 
 .post {
@@ -109,7 +119,9 @@ a {
         margin-top: 2em;
         color: black;
     }
-
+    h2 {
+        margin-top: 0em;
+    }
     h1, h2 {
         font-size: 1.5em;
     }
@@ -173,4 +185,13 @@ a {
 @-o-keyframes throb {
     0%   { opacity: 0.25; }
     100% { opacity: 1; }
+}
+
+#archives {
+    h1, h2, h3, h4, h5 {
+        font-weight: normal;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        color: black;
+    }
 }

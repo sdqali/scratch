@@ -1,7 +1,6 @@
 {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 {% unless year == this_year %}
   {% assign year = this_year %}
-  <br />
   <h2 class="year yeartitle">{{ year }}</h2>
 {% endunless %}
 
