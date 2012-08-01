@@ -108,15 +108,22 @@ a {
             -webkit-border-radius: 4px;
         }
     }
+
+    #main {
+        margin-top: 2em;
+    }
 }
 
 .post {
+    margin-bottom: 2em;
+
     &>h1:first-child {
         display: none;
     }
     h1, h2, h3, h4, h5 {
         font-weight: normal;
-        margin-top: 2em;
+        margin-top: 0em;
+        margin-bottom: 0em;
         color: black;
     }
     h2 {
