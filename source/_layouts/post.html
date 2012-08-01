@@ -21,4 +21,14 @@ single: true
       <div id="disqus_thread" aria-live="polite"></div>
     </div>
   {% endif %}
+  <div class="posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      {% for post in site.posts limit: site.recent_posts %}
+      <li>
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

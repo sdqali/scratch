@@ -1,15 +1,4 @@
 <div id="footer">
-  <div class="posts">
-    <h2>Recent Posts</h2>
-    <ul>
-      {% for post in site.posts limit: site.recent_posts %}
-      <li>
-        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-
   <div class="license">
     <p>This work by <a xmlns:cc="http://creativecommons.org/ns#"
                        href="http://blog.sdqali.in" property="cc:attributionName"
