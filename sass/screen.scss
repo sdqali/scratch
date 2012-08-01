@@ -89,9 +89,18 @@ a {
         }
 
     }
+    #header {
+        h1 {
+            margin-bottom: 0em;
+        }
+        p {
+            margin-bottom: 0em;
+            margin-top: 0em;
+        }
+    }
 }
 
-article {
+.post {
     &>h1:first-child {
         display: none;
     }
