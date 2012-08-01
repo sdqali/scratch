@@ -27,6 +27,7 @@ body {
 
 
 a {
+    text-decoration: none;
     color: $red;
     @include transition;
     &:hover, &:visited:hover {
@@ -44,18 +45,6 @@ a {
     padding: 0.809em;
     max-width: 30em;
     margin: auto;
-    #gistid {
-        font-weight: normal;
-        color: #ccc;
-        font-size: 0.8em;
-        a {
-            color: #ccc;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
     #description {
         @include titling;
         font-weight: normal;
