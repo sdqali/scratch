@@ -4,40 +4,40 @@
     <p>{{ site.subtitle }}</p>
   {% endif %}
 </div>
-<ul id="social-links">
-  {% if site.subscribe_rss %}
-    <li><a target="_blank" class="feed" href="{{ site.subscribe_rss }}" title="RSS">RSS</a></li>
-  {% endif %}
-  {% if site.twitter_user %}
-    <li><a target="_blank" class="twitter" href="https://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a></li>
-  {% endif %}
-  {% if site.github_user %}
-    <li> <a target="_blank" class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a> </li>
-  {% endif %}
-</ul>
-<div class="clear"></div>
-<ul id="nav">
+<div id="links">
   {% if page.current == 'blog' %}
-    <li> <a href="{{ root_url }}/" class="current">blog</a> </li>
+    <a href="{{ root_url }}/" class="current">Blog</a>
   {% else %}
-    <li> <a href="{{ root_url }}/">blog</a> </li>
-  {% endif %}
+    <a href="{{ root_url }}/">Blog</a>
+  {% endif %} /
 
   {% if page.current == 'about' %}
-  <li><a href="{{ root_url }}/about" class="current">about</a></li>
+    <a href="{{ root_url }}/about" class="current">About</a>
   {% else %}
-  <li><a href="{{ root_url }}/about">about</a></li>
-  {% endif %}
+    <a href="{{ root_url }}/about">About</a>
+  {% endif %} /
 
   {% if page.current == 'talks' %}
-  <li><a href="{{ root_url }}/talks" class="current">talks</a></li>
+    <a href="{{ root_url }}/talks" class="current">Talks</a>
   {% else %}
-  <li><a href="{{ root_url }}/talks">talks</a></li>
-  {% endif %}
+    <a href="{{ root_url }}/talks">Talks</a>
+  {% endif %} /
 
   {% if page.current == 'archives' %}
-    <li><a href="{{ root_url }}/blog/archives" class="current">archives</a></li>
+    <a href="{{ root_url }}/blog/archives" class="current">Archives</a>
   {% else %}
-    <li><a href="{{ root_url }}/blog/archives">archives</a></li>
+    <a href="{{ root_url }}/blog/archives">Archives</a>
+  {% endif %} /
+
+  {% if site.twitter_user %}
+    <a target="_blank" class="twitter" href="https://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
+  {% endif %} /
+
+  {% if site.github_user %}
+    <a target="_blank" class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
+  {% endif %} /
+
+  {% if site.subscribe_rss %}
+    <a target="_blank" class="feed" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>
   {% endif %}
-</ul>
+</div>
