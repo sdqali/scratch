@@ -1,6 +1,7 @@
 @import "defaults";
 @import "normalize";
 @import "typography";
+@import "pygments/_solarized";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/transition";
 @import "compass/css3/box-shadow";
@@ -200,5 +201,11 @@ a {
         margin-top: 0.5em;
         margin-bottom: 0.5em;
         color: black;
+    }
+}
+.highlight {
+    background: seashell;
+    .gutter {
+        padding-right: 12px;
     }
 }
