@@ -1,0 +1,41 @@
+<div id="footer">
+  <div class="posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      {% for post in site.posts limit: site.recent_posts %}
+      <li>
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="license">
+    <p>This work by <a xmlns:cc="http://creativecommons.org/ns#"
+                       href="http://blog.sdqali.in" property="cc:attributionName"
+                       rel="cc:attributionURL">Sadique Ali</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>
+    </p>
+  </div>
+
+  <p class="powered">
+    Powered by <a href="http://octopress.org">Octopress</a>. Theme based
+    on <a href="https://github.com/iwinux/compbits">Compbits</a>
+    {% if site.sc_project && site.sc_security %}
+    <section>
+      <script type="text/javascript">
+        var sc_project={{site.sc_project}};
+        var sc_invisible=1;
+        var sc_security="{{site.sc_security}}";
+      </script>
+      <script type="text/javascript"
+              src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+      <noscript><div class="statcounter"><a title="tumblr
+                                                   analytics" href="http://statcounter.com/tumblr/"
+                                            class="statcounter"><img class="statcounter"
+                                                                     src="http://c.statcounter.com/{{sc_project}}/0/{{sc_security}}/0/"
+                                                                     alt="tumblr analytics" /></a></div></noscript>
+    </section>
+    {% endif %}
+
+  </p>
+</div>

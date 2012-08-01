@@ -1,0 +1,12 @@
+// Defaults ------------------------------------------------------------------
+$default-transition-duration: 0.25s;
+
+@mixin copy {
+    font-family: "Alegreya", Palatino, Georgia, serif;
+}
+
+@mixin titling {
+    font-family: "Alegreya SC", Palatino, Georgia, serif;
+}
+
+$red: #fc263a
