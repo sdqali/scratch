@@ -80,6 +80,9 @@ a {
 
     }
     #header {
+        a:visited {
+            color: $red;
+        }
         h1 {
             margin-bottom: 0em;
         }
@@ -89,6 +92,9 @@ a {
         }
     }
     #links {
+        a {
+            color: $red;
+        }
         .current {
             color: white;
             background: $red;
@@ -192,6 +198,7 @@ a {
         color: black;
     }
 }
+
 .highlight {
     background: seashell;
     .gutter {
