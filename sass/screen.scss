@@ -28,13 +28,13 @@ body {
 
 a {
     text-decoration: none;
-    color: $red;
+    color: $green;
     @include transition;
     &:hover, &:visited:hover {
-        color: darken($red, 20%);
+        color: darken($green, 20%);
     }
     &:visited {
-        color: lighten($red, 15%);
+        color: $green;
     }
 }
 
@@ -81,7 +81,7 @@ a {
     }
     #header {
         a:visited {
-            color: $red;
+            color: $green;
         }
         h1 {
             margin-bottom: 0em;
@@ -94,11 +94,11 @@ a {
     }
     #links {
         a {
-            color: $red;
+            color: $green;
         }
         .current {
             color: white;
-            background: $red;
+            background: $green;
             text-decoration: none;
             padding: 0px 10px;
             border-radius: 4px;
@@ -211,7 +211,7 @@ a {
 
 .post-title {
     a {
-        color: $red;
+        color: $green;
     }
     text-transform: uppercase;
 }
